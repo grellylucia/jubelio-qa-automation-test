@@ -11,7 +11,7 @@ describe("Edit Pesanan", () => {
     loginPage.login(email, password);
   });
 
-  it("Successfully create a new order with valid data ", () => {
+  it("Successfully edit some fields in order detail with valid data ", () => {
     orderPage.visitOrderPage();
     orderPage.editOrder("SO-000000003");
     orderFormPage.selectPelanggan(updateOrder.pelanggan);
