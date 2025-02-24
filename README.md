@@ -7,8 +7,6 @@ This project is a **Cypress-based automation testing framework** for the **Penju
 - ✅ **Create and Edit Pesanan (Orders)**
 - ✅ **Search Pesanan (Orders)**
 
-This repository is created as part of the application for the **Senior QA Engineer** position at Jubelio.
-
 ---
 
 ## 🛠️ Tech Stack
@@ -67,8 +65,37 @@ This repository is created as part of the application for the **Senior QA Engine
 
 ### Setup Instructions
 
+**1. Clone the Repository**
+
 ```sh
 git clone https://github.com/grellylucia/jubelio-qa-automation-test.git
 cd jubelio-qa-automation
+```
+
+**2. Install dependencies**
+
+```sh
 npm install
+```
+
+**3. Set Up Environment Variables**
+
+Create a `cypress.env.json` file from the example file :
+
+```sh
+cp cypress.env.json.example cypress.env.json
+```
+
+**4. Run Cypress Test Runner**
+
+To open Cypress UI :
+
+```sh
+npm run cypress:open
+```
+
+To run Cypress tests in headless mode :
+
+```sh
+npm run cypress:run
 ```
