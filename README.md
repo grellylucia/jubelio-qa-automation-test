@@ -1,2 +1,74 @@
-# jubelio-qa-automation-test
-Automation test (Cypress) a. Penjualan: Create and Edit Pesanan b. Penjualan: Search Pesanan
+# Jubelio QA Automation Project (Cypress) 🚀
+
+## 📌 Project Overview
+
+This project is a **Cypress-based automation testing framework** for the **Penjualan (Sales) features** of Jubelio. It includes automated tests for:
+
+- ✅ **Create and Edit Pesanan (Orders)**
+- ✅ **Search Pesanan (Orders)**
+
+This repository is created as part of the application for the **Senior QA Engineer** position at Jubelio.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Test Framework:** Cypress
+- **Assertions:** Mocha & Chai
+
+---
+
+## 📂 Project Structure
+
+```
+📦 jubelio-qa-automation-test
+│── 📂 cypress
+│   ├── 📂 data               # Stores test data files
+│   ├── 📂 downloads          # Stores downloaded files during tests
+│   ├── 📂 e2e
+│   │   ├── 📂 penjualan      # Contains test scripts for "penjualan" (sales) flow
+│   │   │   ├── create-pesanan.cy.js
+│   │   │   ├── edit-pesanan.cy.js
+│   │   │   ├── search-pesanan.cy.js
+│   │   │   ├── test.spec.js
+│   ├── 📂 fixtures           # Contains static test data (JSON files)
+│   ├── 📂 helpers            # Utility/helper functions for tests
+│   │   ├── faker.js          # Generates fake data for testing
+│   ├── 📂 pages              # Page Object Model (POM) implementation
+│   │   ├── 📂 sales
+│   │   │   ├── order-form.page.js  # Handles interactions with the order form page
+│   │   │   ├── order.page.js       # Handles order-related actions
+│   │   ├── base.page.js        # Base page containing common functions
+│   │   ├── login.page.js       # Handles interactions with the login page
+│   │   ├── navigation.page.js  # Handles navigation elements
+│   ├── 📂 screenshots          # Stores screenshots taken during tests
+│   ├── 📂 support              # Cypress support files
+│   ├── 📂 consts               # Constants and route configurations
+│   │   ├── routes.js           # Defines API routes
+│   ├── commands.js             # Custom Cypress commands
+│   ├── e2e.js                  # Cypress test setup configuration
+│── 📂 node_modules             # Installed dependencies (auto-generated)
+│── .gitignore                  # Files to ignore in version control
+│── cypress.config.js           # Cypress configuration file
+│── cypress.env.json            # Environment-specific configuration
+│── package.json                # Project dependencies and scripts
+│── package-lock.json           # Lock file for dependency versions
+│── README.md                   # Project documentation
+```
+
+---
+
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+- **Node.js** (v16 or later)
+- **Cypress installed globally** (or use `npx`)
+
+### Setup Instructions
+
+```sh
+git clone https://github.com/grellylucia/jubelio-qa-automation-test.git
+cd jubelio-qa-automation
+npm install
+```

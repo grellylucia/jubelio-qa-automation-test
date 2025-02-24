@@ -1,0 +1,27 @@
+{
+  "name": "jubelio-qa-automation-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "npx cypress open",
+    "cypress:run:create-pesanan": "npx cypress run --headed --browser chrome --spec './cypress/e2e/penjualan/create-pesanan.cy.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grellylucia/jubelio-qa-automation-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/grellylucia/jubelio-qa-automation-test/issues"
+  },
+  "homepage": "https://github.com/grellylucia/jubelio-qa-automation-test#readme",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "cypress": "^14.0.3"
+  }
+}
