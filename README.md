@@ -69,7 +69,7 @@ This project is a **Cypress-based automation testing framework** for the **Penju
 
 ```sh
 git clone https://github.com/grellylucia/jubelio-qa-automation-test.git
-cd jubelio-qa-automation
+cd jubelio-qa-automation-test
 ```
 
 **2. Install dependencies**
