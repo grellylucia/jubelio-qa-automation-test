@@ -28,7 +28,6 @@ This project is a **Cypress-based automation testing framework** for the **Penju
 │   │   │   ├── create-pesanan.cy.js
 │   │   │   ├── edit-pesanan.cy.js
 │   │   │   ├── search-pesanan.cy.js
-│   │   │   ├── test.spec.js
 │   ├── 📂 fixtures           # Contains static test data (JSON files)
 │   ├── 📂 helpers            # Utility/helper functions for tests
 │   │   ├── faker.js          # Generates fake data for testing
