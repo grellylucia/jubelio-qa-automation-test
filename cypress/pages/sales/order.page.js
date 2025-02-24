@@ -10,6 +10,22 @@ class OrderPage {
     return cy.get('[data-testid="ChevronRightIcon"]').should("be.visible");
   }
 
+  get filterByField() {
+    return (filter) => cy.get("span.p-2").contains(filter);
+  }
+
+  get filterOption() {
+    return (option) => cy.contains("span", option);
+  }
+
+  get buttonTerapkan() {
+    return cy.contains("button", "Terapkan");
+  }
+
+  get cancelFilterValueIcon() {
+    return cy.get('[data-testid="CancelIcon"]');
+  }
+
   visitOrderPage() {
     navigationPage.menuPenjualan.click();
     navigationPage.menuTransaksiPenjualan.click();
@@ -55,6 +71,18 @@ class OrderPage {
     cy.get("tbody tr:first-child td span.font-weight-lightbold").click();
     cy.contains(data.pelanggan).should("exist");
     cy.contains(data.no_ref).should("exist");
+  }
+
+  searchOrderByText(keyword) {
+    cy.get('input[placeholder="Cari pesanan"]').type(keyword);
+    this.buttonTerapkan.click();
+  }
+
+  searchOrderByStatus(filter, value) {
+    this.filterByField(filter).click();
+    this.filterOption(value).click();
+    this.buttonTerapkan.click();
+    this.cancelFilterValueIcon.click();
   }
 }
 

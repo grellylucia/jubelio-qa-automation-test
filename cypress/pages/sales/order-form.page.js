@@ -77,7 +77,6 @@ class CreateOrderPage extends BasePage {
   }
 
   get saveButton() {
-    // return cy.contains("button", "Simpan");
     return cy.get('button[type="submit"]');
   }
 
