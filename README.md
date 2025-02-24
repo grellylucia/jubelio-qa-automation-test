@@ -80,11 +80,13 @@ npm install
 
 **3. Set Up Environment Variables**
 
-Create a `cypress.env.json` file from the example file :
+- Create a `cypress.env.json` file from the example file :
 
-```sh
-cp cypress.env.json.example cypress.env.json
-```
+  ```sh
+  cp cypress.env.json.example cypress.env.json
+  ```
+
+- Open `cypress.env.json` and fill it with the credentials provided via email.
 
 **4. Run Cypress Test Runner**
 
